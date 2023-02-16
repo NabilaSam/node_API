@@ -23,7 +23,7 @@ route.get('/', (req,res)=> {
     res.status(200).sendFile(path.join(__dirname, './view/index.html'));
 })
 
-route.get('/Users', (req,res)=> {
+route.get('/users', (req,res)=> {
     const strQry = 
     `
     SELECT firstName,lastName, emailAdd, country
